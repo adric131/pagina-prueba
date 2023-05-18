@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    background-color:rgb(245, 233, 233);
+    font-family: system-ui;
+}
+header {
+    width: 100vw;
+    background-color:rgb(235, 164, 183);
+}
+
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+    flex-direction: column;
+    height: 10rem;
+    
+}
+header nav ul li{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    margin-left: .5rem
+
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(104, 34, 34);
+    font-weight: 500;
+}
+
+.textoh1{
+    font-family: system-ui;
+    font-size: 2rem;
+color: rgb(104, 34, 34);
+
+
+}
+
+.titulopagina{
+    font-size: 2rem;
+text-align: center;
+color: rgb(104, 34, 34);
+}
+
+
+.buscador{
+   
+  padding-left: 60rem;
+  background-color:  rgba(253, 246, 231);
+  margin-top: -10rem;
+  margin-right: 10rem;
+  border-style: none;
+  padding-bottom: 0.5rem;
+  
+
+
+}
+
+.carritoDeCompras{
+
+    height: 3rem;
+    width: 3rem;
+
+}
+.menu {
+    left: -1rem;
+    top: 5rem;
+    transform: translateX(-100%);
+    transition:all .4s ease;
+    position: absolute;
+    background-color:rgba(235, 164, 183, 0.258);
+    height: 12rem;
+    border-radius:  0 0 0.5rem 0;
+    
+}
+
+.visible {
+    transform: translateX(0);
+}
+.botonMenu {
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    height: 3rem;
+    border: 0;
+    background: transparent;
+    gap: .65rem;
+
+}
+button > div {
+    background: rgb(104, 34, 34);
+    height: 2px;
+    width: 100%;
+    border-radius: 5px;
+    transition: all .5s;
+    transform-origin: left;
+}
+button:hover div:first-child {
+    transform: rotate(33deg);
+}
+button:hover div:nth-child(2) {
+    opacity: 0;
+}
+button:hover div:last-child {
+    transform: rotate(-33deg);
+}
+menu {
+    display: flex;
+    padding: 1rem;
+    width: 100vw;
+    justify-content: space-between;
+    
+}
+main {
+    font-style: italic;
+    color:white;
+    
+}
+main {
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+main h1 {
+font-size: 2rem;
+text-align: center;
+color: rgb(104, 34, 34);
+}
+main h2{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: rgb(104, 34, 34);
+}
+.imagenes {
+    display: grid;
+    grid-template-columns: 15rem 15rem;
+    grid-template-rows: 15rem 15rem;
+    width: 30rem;
+    grid-gap: 5rem ;
+    margin: 6rem auto;
+    
+}
+.imagenes img {
+height: 15rem;
+width: 15rem;
+border-radius: 0.3rem;
+box-shadow: 5px 5px grey;
+transition: 0.5s;
+object-fit: cover;
+
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+footer{
+    background-color:rgb(235, 164, 183);
+    color: rgb(104, 34, 34);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10vh;
+}
+footer ul{
+    display: flex;
+    gap: 2rem;
+}
+footer img{
+    
+    height: 2rem;
+    width: 2rem;}
